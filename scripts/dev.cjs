@@ -5,8 +5,8 @@ const backendDir = path.join(__dirname, "..", "backend");
 
 const python =
   process.platform === "win32"
-    ? path.join(backendDir, "env", "Scripts", "python.exe")
-    : path.join(backendDir, "env", "bin", "python");
+    ? path.join(backendDir, ".venv", "Scripts", "python.exe")
+    : path.join(backendDir, ".venv", "bin", "python");
 
 const child = spawn(
   python,
