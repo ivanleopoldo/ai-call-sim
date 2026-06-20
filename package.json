@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"pnpm --dir frontend dev\" \"node scripts/dev-backend.js\"",
+    "dev": "concurrently \"pnpm --dir frontend dev\" \"node scripts/dev.cjs\"",
     "dev:frontend": "pnpm --dir frontend dev",
-    "dev:backend": "node scripts/dev-backend.js"
+    "dev:backend": "node scripts/dev-backend.js",
+    "gen:types": "node scripts/gen-types.cjs",
+    "bootstrap": "pnpm install && pnpm setup",
+    "setup": "node scripts/setup.cjs"
   },
   "keywords": [],
   "author": "",
