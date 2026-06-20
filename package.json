@@ -1,0 +1,26 @@
+{
+  "name": "ai-call-sim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"pnpm --dir frontend dev\" \"node scripts/dev-backend.js\"",
+    "dev:frontend": "pnpm --dir frontend dev",
+    "dev:backend": "node scripts/dev-backend.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.8.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "concurrently": "^10.0.3",
+    "openapi-typescript": "^7.13.0"
+  }
+}

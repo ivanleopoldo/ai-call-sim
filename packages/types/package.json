@@ -1,0 +1,9 @@
+{
+  "name": "@ai-call-sim/types",
+  "version": "1.0.0",
+  "private": true,
+  "types": "src/api.ts",
+  "exports": {
+    ".": "./src/api.ts"
+  }
+}
